@@ -1,0 +1,219 @@
+/* Reset стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Додано відступ для врахування фіксованої шапки */
+}
+
+header {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 20px; /* Збільшено відступи */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-left: 20px; /* Додано відступ ліворуч */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 50px; /* Задаємо висоту логотипу */
+    margin-right: 20px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #222;
+}
+
+main {
+    margin: 80px 20px 20px; /* Додано відступ для уникнення перекриття вмісту шапкою */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+#products li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Застосовуємо плавний перехід при наведенні */
+}
+
+#products li:hover {
+    transform: translateY(-5px); /* Змінюємо позицію при наведенні */
+}
+
+.product-image {
+    width: 100%; /* Задаємо 100% ширини для зображень продуктів */
+    max-height: 200px; /* Задаємо максимальну висоту для зображень продуктів */
+    object-fit: cover; /* Задаємо об'єктну функцію для зображень, щоб забезпечити їх коректне масштабування */
+    border-radius: 5px; /* Округлюємо кути */
+}
+
+#products li h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#products li p {
+    color: #666;
+}
+
+#products li button {
+    margin-top: auto; /* Розміщуємо кнопку внизу контейнера */
+    align-self: center; /* Вирівнюємо кнопку по центру по вертикалі */
+    padding: 10px 20px; /* Задаємо відступи кнопки */
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Застосовуємо плавний перехід колір фону */
+}
+
+#products li button:hover {
+    background-color: #d63600; /* Змінюємо колір фону кнопки при наведенні */
+}
+
+#actions ul {
+    list-style-type: disc; /* Задаємо маркери списку */
+    margin-left: 20px; /* Збільшуємо відступи ліворуч */
+}
+
+/* Стилі для розділу "Доставка" */
+#delivery {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#delivery h2 {
+    color: #333;
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#delivery p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#delivery ul {
+    margin-bottom: 20px;
+}
+
+#delivery ul li {
+    list-style-type: disc;
+    color: #666;
+    margin-left: 20px;
+}
+
+#delivery ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Застосовуємо плавний перехід кольору */
+}
+
+.footer-section ul li a:hover {
+    color: #ff5733; /* Змінюємо колір посилання при наведенні */
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
